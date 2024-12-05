@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="C:\Users\kotonai\Downloads\svoe_app\static\css\news.css" />
+
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" />
+</head>
+<body>
+    <div class="mac-book-air-5">
+        <div class="header">
+          <div class="frame-9">
+            <div class="rectangle-16"></div>
+            <div class="frame-161">
+              <a class="div" href="index.html">Главная</a>
+              <a class="div" href="about.html">О нас</a>
+              <a class="div" href="price.html">Цены</a>
+              <a class="div" href="news.html">Новости</a>
+            </div>
+          </div>
+          <div class="frame-7">
+            <a class="div3" href="https://wa.clck.bar/77007553871">
+              Связаться с нами
+            </a>
+          </div>
+          <img class="frame-169-1" src="C:\Users\kotonai\Downloads\svoe_app\static\img\Frame169-1.svg" />
+        </div>
+        <div class="footer">
+          <div class="component">
+            <div class="div-flex-grid">
+              <div class="div-col">
+                <div class="div4">
+                    <img class="frame-169-2" src="C:\Users\kotonai\Downloads\svoe_app\static\img\Frame169-1.svg" />
+                </div>
+                <div class="copyright-2013-2023-reform-hosting-all-rights-reserved">
+                  Copyright © 2024.All Rights Reserved.
+                </div>
+              </div>
+            </div>
+            <div class="frame-143">
+              <div class="div5">
+                Контакты
+                <br />
+              </div>
+              <div class="frame-144">
+                <a class="frame-145" href="tel:+77007553871">
+                  <div class="phone-line">
+                    <img class="group" src="C:\Users\kotonai\Downloads\svoe_app\static\img\phone-line.svg" />
+                  </div>
+                  <div class="_7-700-755-3871">+7 700 755 3871</div>
+                </a>
+                <a class="frame-146" href="https://www.instagram.com/sp_program_kz/">
+                  <div class="instagram-line">
+                    <img class="group2" src="C:\Users\kotonai\Downloads\svoe_app\static\img\instagram-line.svg" />
+                  </div>
+                  <div class="sp-program-kz">sp_program_kz</div>
+                </a>
+                <a class="frame-147" href="https://wa.clck.bar/77007553871">
+                  <div class="whatsapp-line">
+                    <img class="group3" src="C:\Users\kotonai\Downloads\svoe_app\static\img\whatsapp-line.svg" />
+                  </div>
+                  <div class="_7-700-755-3871">+7 700 755 3871</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="frame-92">
+            <div class="rectangle-18"></div>
+            <div class="_24-7-7-700-755-3871">
+              <span>
+                <span class="_24-7-7-700-755-3871-span">Нужна помощь?</span>
+                <span class="_24-7-7-700-755-3871-span2"> </span>
+                <span class="_24-7-7-700-755-3871-span3">
+                  Позвоните нам 24/7:
+                  <br />
+                </span>
+                <span class="_24-7-7-700-755-3871-span4">
+                  <br />
+                </span>
+                <span class="_24-7-7-700-755-3871-span5">+7 700 755 3871</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="frame-187">
+            <div class="frame-182">
+                {% for item in data %}
+                <div class="frame-180">
+                    <div class="rectangle-25"></div>
+                    <div class="title">{{ item[0] }}</div>
+                    <div class="time">{{ item[1] }}</div>
+                    <div class="main-text">{{ item[2] }}</div>
+                </div>
+                {% endfor %}
+            </div>
+          <div class="svproizvodstvo-kz">
+            <span>
+              <span class="svproizvodstvo-kz-span">
+                О блоге
+                <br />
+              </span>
+              <span class="svproizvodstvo-kz-span2">
+                Здесь публикуются последние новости и оповещения svproizvodstvo.kz
+              </span>
+            </span>
+          </div>
+          <div class="frame-183">
+            <div class="div6">
+              Последние посты
+              <br />
+            </div>
+            <img class="vector-2" src="vector-20.svg" />
+            <div class="frame-185">
+              {% for post in posts %}
+                <div class="frame-184">
+                  <svg class="vector-3" xmlns="http://www.w3.org/2000/svg" width="275" height="1" viewBox="0 0 275 1" fill="none">
+                    <path d="M1 0.5H274" stroke="black" stroke-linecap="round"/>
+                  </svg>
+                  <div class="time2">{{ post[1] }}</div> <!-- Выводим время -->
+                  <div class="title2">{{ post[0] }}</div> <!-- Выводим заголовок -->
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </body>
+</html>
